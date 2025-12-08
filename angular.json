@@ -5,7 +5,17 @@
   "projects": {
     "land-page-ser-amor": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": true,
+          "changeDetection": "OnPush",
+          "skipTests": false,
+          "inlineStyle": false,
+          "inlineTemplate": false,
+          "style": "scss",
+          "flat": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

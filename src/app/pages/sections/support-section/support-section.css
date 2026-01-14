@@ -1,0 +1,12 @@
+.pix-image {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 32px;
+}
+
+.pix-address {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --container-width: 1140px;
+  --section-padding: 80px 24px;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section--white {
+  background: #ffffff;
+}
+
+.section--gray {
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-title.red { color: #e53935; }
+.section-title.yellow { color: #fbc02d; }
+.section-title.green { color: #2e7d32; }
+.section-title.pink { color: #d81b60; }
+.section-title.purple { color: #6a1b9a; }
+
+.section-description {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
